@@ -1,0 +1,954 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    flex: 100%;
+    justify-content: space-around;
+
+}
+
+/* HEADER */
+
+header{
+    background-color: black;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    color: white;
+    height: 70px;
+    width: 100%;
+}
+
+header > div#divCabecera{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex: 100%;
+    width: 100%;
+}
+
+header > div#divCabecera > a{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+header > div > img.imgCabecera{
+    width: 20px;
+    height: 20px;
+}
+
+header > div#divBuscador{
+    position: absolute;
+    top: 64px;
+    z-index: 50px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+
+    background-color: white;
+    padding: 0.2rem;
+    border-radius: 6px;
+
+    border: 1px solid black;
+}
+
+header > div#divBuscador > input{
+    border: none;
+}
+
+/* NAV */
+
+header > div#divCabecera > nav#menu-principal{
+    display: flex;
+    flex-direction: row;
+}
+
+header > div#divCabecera > nav#menu-principal > label > span{
+    cursor: pointer;
+}
+
+header > div#divCabecera > nav#menu-principal > input{
+    display:none ;
+}
+
+header > div#divCabecera > nav#menu-principal > input#menu-hamburger:checked + ul#menu{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    position: absolute;
+    top: 3rem;
+    list-style: none;
+    transition: transform 0.3s ease;
+    z-index: 2;
+    border-radius: 0.2rem;
+}
+
+header > div#divCabecera > nav#menu-principal > input#menu-hamburger:checked + ul#menu >li{
+    background-color: #0741A6;
+    padding: 0.4rem 1.4rem;
+    margin: 0.4rem;
+    border-radius: 0.4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+header > div#divCabecera > nav#menu-principal > input#menu-hamburger:checked + ul#menu >li:hover{
+    cursor: pointer;
+}
+
+header > div#divCabecera > nav#menu-principal > input#menu-hamburger:checked + ul#menu >li > a{
+    color: white;
+}
+
+.headerFijado{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    opacity: 0.75;
+}
+
+ul#menu{
+    display: none;
+}
+
+ul#menu > li > a{
+    color: black;
+    text-decoration: none;
+}
+
+/* PROMOCION */
+
+section#slider{
+    display: block;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+section.promocion > ul.slider-wrapper{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+section.promocion > ul.slider-wrapper > li{
+    display: block;
+    justify-content: center;
+    margin-left: -2.5rem; /* Hace que no haya un espacio a la izquierda y se pueda centrar */
+    
+}
+
+section.promocion > ul.slider-wrapper > li > img.imgPaginasPromo{
+    width: 330px;
+    margin: 0 auto;
+   
+}
+
+/* SECCION PRINCIPAL */
+
+
+section#principal{
+    display: flex;
+    flex-flow: row wrap;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    background-color: #0741A6;
+}
+
+section#principal > article{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0741A6;
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    /*border: 1px solid red;*/
+}
+
+section#principal > article > a{
+    background: white;
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+}
+
+section#principal > article > a > img{
+    width: 140px;
+}
+
+/* SECCIÓN DE OFERTAS */
+
+section#ofertas{
+    background: #A32A2A;
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 2rem;
+    flex: 100%;
+}
+
+section#ofertas > h1{
+    color: white;
+    text-align: center;
+    flex: 100%;
+}
+
+section#ofertas > a{
+    border: 1px solid white;
+    padding: 0.4rem 1.3rem 0.4rem 1.3rem;
+    background:#2A35A3;
+    color: white;
+    border-radius: 0.2rem;
+}
+
+section#ofertas > article{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex: 100%;
+    margin-top: 1rem;
+}
+
+section#ofertas > article > div#secOfertas{
+    display: flex;
+    flex-flow: row;
+    flex:0 90%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+section#ofertas > article > div#secOfertas > a{
+    color: white;
+    text-decoration-line: none;
+    font-size: 0.9rem;
+}
+
+section#ofertas > article > div.datos-ofertas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    
+
+}
+
+section#ofertas > article > div.datos-ofertas > a{
+    width: 40%;
+    background-color: white;
+    margin-top: 1.5rem;
+    border-radius: 0.2rem;
+    color: black;
+}
+
+
+section#ofertas > article > div.datos-ofertas > a > span.envio{
+    border: 2px solid #209E0B;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    color: #209E0B;
+    position: relative;
+    left: 5rem;
+    top: -0.9rem;
+    background-color: white;
+    font-size: 0.8rem;
+}
+
+section#ofertas > article > div.datos-ofertas > a > img{
+    width: 140px;
+    margin-top: -1.3rem;
+}
+
+section#ofertas > article > div.datos-ofertas > a > p{
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+
+
+section#ofertas > article > div.datos-ofertas > a > span.precio-oferta{
+    font-size: 1.2rem;
+    color: #A32A2A;
+    margin-left: 0.5rem;
+}
+
+section#ofertas > article > div.datos-ofertas > a > span.precio-recomendado{
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-left: 0.3rem;
+    margin-right: 0.5rem;
+}
+
+/* FOOTER */
+
+footer{
+    background: black;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 100%;
+}
+
+footer > div#redes{
+    border: 1px solid green
+}
+
+
+footer > div#metodoPago{
+    border: 1px solid yellow;
+}
+
+footer > div#redes > h2{
+    flex:0 100%;
+    text-align: center;
+    border: 1px solid red;
+}
+
+footer > div#redes{
+    display: flex;
+    flex: 100%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+footer > div#redes > a{
+    margin-bottom: 1rem;
+}
+
+footer > div.avisos-legales{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+    align-items: center;
+
+    border: 10px solid orange;
+
+}
+
+footer > div.avisos-legales > a{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    color: black;
+    margin-bottom: 1rem;
+    border: 1px solid red;
+}
+
+footer > div.avisos-legales:nth-child(3){
+    margin-top: 1rem;
+}
+
+footer > div.avisos-legales > a{
+    flex: 0 60%;
+    display: flex;
+    color: black;
+}
+
+footer > div#metodoPago{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 100%;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+footer > div#metodoPago > img{
+    width: 80px;
+}
+
+/* Iniciar sesión */
+
+form{
+    display: flex;
+    justify-content: center;
+    flex: 0 70%;
+}
+
+form > div#formulario{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+form > div#formulario h1{
+    flex: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+form > div#formulario input{
+    width: 90%;
+    margin: 0 auto;
+    margin: 0.4rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+form > div#formulario > div#mantener-sesion{
+    display: flex;
+    flex-flow: row;
+    flex: 100%;
+    font-size: 0.6rem;
+    align-items: center;
+    margin-top: -0.6rem;
+    cursor: pointer;
+}
+
+form > div#formulario > div#mantener-sesion > input{
+    flex: 5%;
+    border: 1px solid black;
+}
+
+form > div#formulario > input#iniciar-sesion{
+    background-color: #0741A6;
+    color: white;
+    cursor: pointer;
+}
+
+form > div#formulario > div#mantener-sesion > label{
+    flex: 0 85%;
+}
+
+
+form > div#formulario > a#crear-cuenta{
+    width: 90%;
+    margin: 0 auto;
+    margin: 0.4rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: black;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+form > div#formulario > a#recuperar-contrasenia{
+    font-size: 0.8rem;
+    margin-top: -0.2rem;
+    text-decoration: underline;
+    color: black;
+    margin-bottom: 5rem;
+}
+
+
+/* Crear cuenta */
+
+form > div#formulario > select{
+    width: 20%;
+    margin-left: 0.4rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+
+}
+
+form > div#formulario > input#movil{
+    width: 60%;
+}
+
+form > div#formulario > input#cuenta-creada{
+    background-color: #0741A6;
+    color: white;
+    margin-top: 1rem;
+}
+
+
+form > div#formulario > div#promociones{
+    display: flex;
+    flex-flow: row;
+    flex: 100%;
+    font-size: 0.6rem;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 4rem;
+}
+
+form > div#formulario > div#promociones > input{
+    flex: 5%;
+    border: 1px solid black;
+}
+
+form > div#formulario > div#promociones > label{
+    flex: 0 70%;
+
+}
+
+/* PRODUCTOS */
+
+section#secProductos{
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 2rem;
+    flex: 100%;
+}
+
+section#secProductos > article{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex: 100%;
+    margin-top: 1rem;
+}
+
+section#secProductos > article > h1{
+    flex: 0 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section#secProductos > article > div.articulo-contenedor{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    width: 100%;
+    margin-top: 1.5rem;
+    border-radius: 0.2rem;
+    justify-content: space-around;
+
+}
+
+section#secProductos > article > div.articulo-contenedor > a {
+    flex: 0 40%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+section#secProductos > article > div.articulo-contenedor > a > span.envio{
+    border: 2px solid #209E0B;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    color: #209E0B;
+    position: relative;
+    left: 5rem;
+    top: -0.9rem;
+    background-color: white;
+    font-size: 0.8rem;
+}
+
+section#secProductos > article > div.articulo-contenedor > a > img{
+    width: 140px;
+    margin-top: -1.3rem;
+}
+
+section#secProductos > article > div.articulo-contenedor > a > p{
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    
+}
+
+section#secProductos > article > div.articulo-contenedor > a > div#estrella{
+    display: flex;
+    flex-flow: row;
+    justify-content: baseline;
+    width: 100%;
+    margin-top: -0.8rem;
+    margin-left: 0.4rem;
+}
+
+section#secProductos > article > div.articulo-contenedor > a > div#estrella > img{
+    width: 20px;
+}
+
+
+
+section#secProductos > article > div.articulo-contenedor > a > span.precio-oferta{
+    font-size: 1.2rem;
+    color: #A32A2A;
+    margin-left: 0.5rem;
+}
+
+section#secProductos > article > div.articulo-contenedor > a > span.precio-recomendado{
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-left: 0.3rem;
+    margin-right: 0.5rem;
+}
+
+#recorrer-paginas{
+    display: flex;
+    flex: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#recorrer-paginas > img{
+    padding: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    margin-left: 0.7rem;
+}
+
+/* VER PRODUCTO*/
+
+section#secProducto > article{
+    display: block;
+}
+
+section#secProducto > article > div#atras > a{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    color: black;
+    margin-bottom: -2rem;
+}
+
+section#secProducto > article > div.articulo-contenedor{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 100%;
+    justify-content: baseline;
+}
+
+section#secProducto > article > div.articulo-contenedor > img{
+    width: 300px;
+    margin: 0 auto;
+}
+
+section#secProducto > article > ul > li{
+    list-style: circle;
+    margin-bottom: 0.4rem;
+}
+
+section#secProducto > article > ul > li > ul > li{
+    margin-bottom: 0.4rem;
+}
+
+section#secProducto > article > div#datosEnvio{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section#secProducto > article > div#datosEnvio h3 > strong{
+    color: #209E0B;
+}
+
+section#secProducto > article > div#datosEnvio > div#envioCasa{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+section#secProducto > article > div#datosEnvio > div#envioCasa > img{
+    margin-right: 1rem;
+}
+
+section#secProducto > article > div#datosEnvio > div#envioCasa > span#llegadaCompra{
+    flex: 100%; 
+    margin-left: 2.5rem;
+    color: #209E0B;
+}
+
+section#secProducto > article > div#datosEnvio > div#recogerSitio{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+
+}
+
+section#secProducto > article > div#datosEnvio > div#recogerSitio > img{
+    margin-right: 1rem;
+}
+
+section#secProducto > div#comprar{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    padding: 1rem;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    border: 1px solid #CC4E00;
+}
+
+section#secProducto > div#comprar > span{
+    flex: 80%;
+    font-size: 1.4rem;
+}
+
+section#secProducto > div#comprar > button{
+    padding: 0.7rem 5rem;
+    color: white;
+    background-color:  #CC4E00;
+    border-radius: 0.2rem;
+    border: none;
+    margin-top: 0.4rem;
+    cursor: pointer;
+}
+
+/* PC */
+
+section#secProducto > article > div.contenedorSeleccion > button.botones{
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+section#secProducto > article > div.contenedorSeleccion > button.botones:focus{
+    border: 1px solid #0741A6;
+}
+
+/* AVISO LEGAL*/
+
+section > h1#avisos-legales{
+    width: 100%;
+    padding: 1rem;
+    background-color: #0741A6;
+    margin: 0 auto;
+    margin-top: 1.4rem;
+    text-align: center;
+    color: white;
+}
+
+section > article.info-legal{
+    width: 90%;
+    margin: auto;
+}
+
+
+
+/* VOLVER ARRIBA*/
+
+div#volverarriba{
+    background-color: #ccc;
+    padding: 0.5rem 1rem;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    position: fixed;
+    opacity: 0.8;
+    display: none;
+    border-radius: 0.4rem;
+}
+
+div#volverarriba > a{
+	display: flex;
+	justify-content: space-between;
+	padding: 0.2rem 1rem;
+    color: black;
+}
+
+/** ---------------------------------------
+ * Slider 
+ ----------------------------------------*/
+
+ .contenedor-slider {
+    width: 340px;
+    margin: 40px auto 0;
+  }
+  
+  .slider-wrapper {
+    z-index: 1;
+    position: relative;
+    width: 340px;
+    height: 360px;
+    background: #FFF;
+    border: 5px solid #b55e5e;
+    overflow: hidden;
+  }
+  
+  .slider-wrapper li {
+    display: none;
+  }
+  
+  .slider-wrapper .current-slide {
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .slider-shadow {
+    width: 340px;
+    height: 15px;
+    position: relative;
+  }
+  
+  .slider-shadow:after,
+  .slider-shadow:before {
+    content: '';
+    position: absolute;
+    background: #A32A2A;
+    height: 100%;
+    width: 50%;
+    left: 10px;
+    top: -20px;
+    -webkit-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+    transform: rotate(-2deg);
+    -webkit-box-shadow: 0 0 15px 8px #A32A2A;
+    box-shadow: 0 0 15px 8px #A32A2A;
+  }
+  
+  .slider-shadow:before {
+    right: 10px;
+    left: auto;
+    -webkit-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    transform: rotate(2deg);
+  }
+  /*
+  .slider-wrapper img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+
+  }*/
+
+  /**
+ * ---[Botones-Control] ---------------------- 
+ **/
+
+.control-buttons {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .control-buttons li {
+    cursor: pointer;
+    display: inline-block;
+    background: #424f66;
+    text-indent: -99999px;
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  
+  .control-buttons li.active {
+    background: #2A35A3;
+  }
+  
+  .authors {
+    text-align: center;
+    color: #7a8699;
+    display: block;
+    font-size: 1.6em;
+    font-weight: 300;
+    margin-top: 80px;
+    font-size: 300;
+  }
+
+  /**
+ * ---[Caption] ---------------------- 
+ **/
+
+.slider-wrapper .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    padding: 10px;
+    color: #FFF;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  
+  .slider-wrapper li:hover .caption {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .slider-wrapper h2 {
+    color: #2A35A3;
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 6px;
+  }
+  
+
+  @media(min-width: 800px){
+    section#principal > article{
+        width: 30%;
+    }
+
+    section#secProductos > article > div.articulo-contenedor > a {
+        flex: 0 30%;
+    }
+
+    section#secProductos > article > div.articulo-contenedor > a > img{
+        width: 220px;
+    }
+
+    section#secProducto > article > div.articulo-contenedor > h1{
+        flex: 100%;
+        text-align: center;
+    }
+
+    section#secProducto > article > div.articulo-contenedor > div#estrella{
+        width: 74%;
+        margin: auto;
+    }
+
+    footer{
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer > div#redes{
+        order: 3;
+        flex: 0 35%;
+    }
+
+    footer > div.avisos-legales{
+        order: 1;
+        flex: 0 35%;
+    }
+
+    footer > div#metodoPago{
+        order: 2;
+        flex: 0 25%;
+    }
+
+    #envioCasa{
+        width: 100%;
+    }
+
+  }

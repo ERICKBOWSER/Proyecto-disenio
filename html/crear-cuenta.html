@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../src/css/estilos.css" />
+    <title>Inicio - Innovate Pc Parts</title>
+    <script src="../jq/jquery-3.7.1.js" type="text/javascript"></script>
+    <script src="../jq/jquery.animate-colors-min.js" type="text/javascript"></script>
+    <script src="../jq/funciones.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <div id="divCabecera">
+            <nav id="menu-principal">
+                <label for="menu-hamburger">
+                    <span>&#9776;</span>
+                </label>
+                <input type="checkbox" id="menu-hamburger" />
+                <ul id="menu">
+                    <li id="ofertas">
+                        <img src="../img/offer.svg" alt="Imagen de ofertas">
+                        <a href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="ordenadores.html">Ordenadores</a>
+                    </li>
+                    <li>
+                        <a href="componentes.html">Componentes</a>
+                    </li>
+                    <li>
+                        <a href="sobremesas.html">Pc sobremesa</a>
+                    </li>
+                    <li>
+                        <a href="monitores.html">Monitores</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="../index.html" id="logo"><strong>Innovate</strong><br>Pc Parts</a>
+            <div>
+                <a href="inicio-sesion.html">
+                    <img id="usuarioLogo" class="imgCabecera" src="../img/user.svg" alt="usuario">
+                </a>
+                <a href="compras.html">
+                    <img id="comprarLogo" class="imgCabecera" src="../img/shopping.svg" alt="comprar">
+                </a>
+            </div>
+        </div>
+        <div id="divBuscador">
+            <input type="text" id="buscador" name="buscador" placeholder="Buscar...">
+            <img class="imgCabecera" src="../img/search.svg" alt="imagen del buscador">
+        </div>
+    </header>
+
+    <form action="index.html" method="post">
+        <div id="formulario">
+            <h1>Crear cuenta</h1>
+            <input type="text" name="email" id="email" aria-label="Correo electrónico" 
+                placeholder="E-mail..." class="datosForm" />
+            <input type="password" name="contrasenia" id="contrasenia" aria-label="contraseña"
+                placeholder="Contraseña..." class="datosForm" />
+
+            <select name="codigos-internacionales" id="codigos-internacionales">
+                <option value="espania">+34</option>
+                <option value="dinamarca">+45</option>
+                <option value="eeuu">+1</option>
+                <option value="India">+91</option>
+            </select>
+            
+            <input type="tel" id="movil" name="movil" placeholder="Móvil..." pattern="[0-9]{9}" />
+
+            <input type="submit" name="crear-cuenta" id="cuenta-creada" value="Crear cuenta" class="datosForm" />
+            <div id="promociones">
+                <input type="checkbox" id="promocion" name="promocion" aria-label="Recibir promociones" />
+                <label for="promocion">Recibir promociones, novedades y contenido personalizados.</label>
+            </div>
+           
+        </div>
+    </form>
+    <footer>
+        
+        <div id="redes">
+            <h2>Siguenos</h2>
+            <a href="https://twitter.com">
+                <img src="../img/twitter.svg" alt="Imagen del logo de twitter">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="../img/instagram.svg" alt="Imagen del logo de instagram">
+            </a>
+            <a href="https://www.tiktok.com/">
+                <img src="../img/tiktok.svg" alt="Imagen del logo de tiktok">
+            </a>
+        </div>
+
+        <div class="avisos-legales">
+            <a href="avisos-legales.html">
+                <img src="../img/bx-male.svg" alt="Imagen de una persona">
+                <p>Quienes somos</p>
+            </a>
+            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+        </div>
+        <div class="avisos-legales">
+            <a href="avisos-legales.html">
+                <img src="../img/bxs-envelope.svg" alt="Imagen de una carta">
+                <p>Contactar</p>
+            </a>
+            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+        </div>
+        <div class="avisos-legales">
+            <a href="avisos-legales.html">
+                <img src="../img/bxs-award.svg" alt="Imagen de un aviso">
+                <p>Aviso legal</p>
+            </a>
+            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+        </div>
+        <div id="metodoPago">
+            <img src="../img/visa.webp" alt="Imagen del logo de Visa">
+            <img src="../img/mastercard.webp" alt="imagen del logo de MasterCard">
+        </div>
+    </footer>
+    <div id="volverarriba"><a href="#top">VOLVER ARRIBA <span><i class="fa fa-sort-asc"
+                    aria-hidden="true"></i></span></a></div>
+
+</body>
+
+</html>

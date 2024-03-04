@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../src/css/estilos.css" />
+    <title>Inicio - Innovate Pc Parts</title>
+    <script src="../jq/jquery-3.7.1.js" type="text/javascript"></script>
+    <script src="../jq/jquery.animate-colors-min.js" type="text/javascript"></script>
+    <script src="../jq/funciones.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <div id="divCabecera">
+            <nav id="menu-principal">
+                <label for="menu-hamburger">
+                    <span>&#9776;</span>
+                </label>
+                <input type="checkbox" id="menu-hamburger" />
+                <ul id="menu">
+                    <li id="ofertas">
+                        <img src="../img/offer.svg" alt="Imagen de ofertas">
+                        <a href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="ordenadores.html">Ordenadores</a>
+                    </li>
+                    <li>
+                        <a href="componentes.html">Componentes</a>
+                    </li>
+                    <li>
+                        <a href="sobremesas.html">Pc sobremesa</a>
+                    </li>
+                    <li>
+                        <a href="monitores.html">Monitores</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="../index.html" id="logo"><strong>Innovate</strong><br>Pc Parts</a>
+            <div>
+                <a href="inicio-sesion.html">
+                    <img id="usuarioLogo" class="imgCabecera" src="../img/user.svg" alt="usuario">
+                </a>
+                <a href="compras.html">
+                    <img id="comprarLogo" class="imgCabecera" src="../img/shopping.svg" alt="comprar">
+                </a>
+            </div>
+        </div>
+        <div id="divBuscador">
+            <input type="text" id="buscador" name="buscador" placeholder="Buscar...">
+            <img class="imgCabecera" src="../img/search.svg" alt="imagen del buscador">
+        </div>
+    </header>
+
+    <section id="secProducto">
+        <article>
+            <div id="atras">
+                <a href="componentes.html">
+                    
+                    <img src="../img/bx-chevron-left.svg" alt="imagen de indicador izquierdo" />
+                    <span>Atrás</span>
+                </a>
+            </div>
+            <div class="articulo-contenedor">
+                <img src="../img/4090.webp" alt="Imagen de un portatil en oferta">
+                <h1>MSI GeForce RTX 4060 VENTUS 2X BLACK OC 8GB GDDR6 DLSS3</h1>
+                <div id="estrella">
+                    <img src="../img/estrella.svg" alt="Imagen de estrella">
+                    <img src="../img/estrella.svg" alt="Imagen de estrella">
+                    <img src="../img/estrella.svg" alt="Imagen de estrella">
+                    <img src="../img/estrella.svg" alt="Imagen de estrella">
+                    <img src="../img/estrella.svg" alt="Imagen de estrella">
+                </div>
+            </div>
+            <hr />
+            <h2>Especificaciones</h2>
+            <ul id="especificaciones">
+                <li>Unidad de procesamiento de gráficos NVIDIA® GeForce RTX™ 4060</li>
+                <li>Interfaz PCI Express® Gen 4x8</li>
+                <li>Relojes centrales</li>
+                <li>Rendimiento extremo: 2505 MHz (MSI Centro)</li>
+                <li>Impulso: 2490 MHz</li>
+                <li>Núcleos 3072 Unidades</li>
+                <li>Velocidad de memoria 17 Gbps</li>
+                <li>Memoria 8GB GDDR6</li>
+                <li>DisplayPort x 3 (v1.4a)</li>
+                <li>HDMI™ x 1 (Admite 4K@120Hz HDR y HDR de 8K a 60 Hz y frecuencia de actualización variable (VRR) como
+                    se especifica en HDMI™ 2.1a)</li>
+                <li>Compatibilidad con HDCP Sí</li>
+                <li>Consumo de energía 115 W</li>
+                <li>Conectores de alimentación 8 pines x 1</li>
+                <li>Fuente de alimentación recomendada (W) 550 W</li>
+                <li>Dimensión de la tarjeta (mm) 199 x 120 x 41 mm</li>
+                <li>Peso (Carta / Paquete) 546 g / 783 g</li>
+                <li>Compatibilidad con la versión OpenGL 4.6</li>
+                <li>Pantallas máximas 4</li>
+                <li>Tecnología G-SYNC™ Sí</li>
+                <li>Resolución máxima digital 7680 x 4320</li>
+            </ul>
+            <div id="datosEnvio">
+                <h3>Disponibilidad del producto en: <strong>En stock</strong></h3>
+                <div id="envioCasa">
+                    <img src="../img/bxs-truck.svg" alt="Imagen de coche de reparto">
+                    <span>Envío: Gratis | Devolución: Gratis</span>
+                    <span id="llegadaCompra">Recíbelo mañana</span>
+                </div>
+                <div id="recogerSitio">
+                    <img src="../img/bxs-store.svg" alt="Imagen de una tienda de recogida">
+                    <span>Ver disponibilidad en tienda</span>
+                </div>
+            </div>
+        </article>
+        <div id="comprar">
+            <span>324,99€</span>
+            <button type="submit" id="aniadirProducto">Añadir a la cesta</button>
+        </div>
+    </section>
+
+    <footer>
+        
+        <div id="redes">
+            <h2>Siguenos</h2>
+            <a href="https://twitter.com">
+                <img src="../img/twitter.svg" alt="Imagen del logo de twitter">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="../img/instagram.svg" alt="Imagen del logo de instagram">
+            </a>
+            <a href="https://www.tiktok.com/">
+                <img src="../img/tiktok.svg" alt="Imagen del logo de tiktok">
+            </a>
+        </div>
+
+        <div class="avisos-legales">
+            <a href="avisos-legales.html">
+                <img src="../img/bx-male.svg" alt="Imagen de una persona">
+                <p>Quienes somos</p>
+            </a>
+            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+        </div>
+        <div class="avisos-legales">
+            <a href="avisos-legales.html">
+                <img src="../img/bxs-envelope.svg" alt="Imagen de una carta">
+                <p>Contactar</p>
+            </a>
+            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+        </div>
+        <div class="avisos-legales">
+            <a href="avisos-legales.html">
+                <img src="../img/bxs-award.svg" alt="Imagen de un aviso">
+                <p>Aviso legal</p>
+            </a>
+            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+        </div>
+        <div id="metodoPago">
+            <img src="../img/visa.webp" alt="Imagen del logo de Visa">
+            <img src="../img/mastercard.webp" alt="imagen del logo de MasterCard">
+        </div>
+    </footer>
+    <div id="volverarriba"><a href="#top">VOLVER ARRIBA <span><i class="fa fa-sort-asc"
+                    aria-hidden="true"></i></span></a></div>
+
+</body>
+
+</html>

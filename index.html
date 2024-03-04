@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/css/estilos.css" />
+    <title>Inicio - Innovate Pc Parts</title>
+    <script src="jq/jquery-3.7.1.js" type="text/javascript"></script>
+    <script src="jq/jquery.animate-colors-min.js" type="text/javascript"></script>
+    <script src="jq/funciones.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <div id="divCabecera">
+            <nav id="menu-principal">
+                <label for="menu-hamburger">
+                    <span>&#9776;</span>
+                </label>
+                <input type="checkbox" id="menu-hamburger" />
+                <ul id="menu">
+                    <li id="ofertas">
+                        <img src="img/offer.svg" alt="Imagen de ofertas">
+                        <a href="html/sobremesas-ofertas.html">Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="html/ordenadores.html">Ordenadores</a>
+                    </li>
+                    <li>
+                        <a href="html/componentes.html">Componentes</a>
+                    </li>
+                    <li>
+                        <a href="html/sobremesas.html">Pc sobremesa</a>
+                    </li>
+                    <li>
+                        <a href="html/monitores.html">Monitores</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="index.html" id="logo"><strong>Innovate</strong><br>Pc Parts</a>
+            <div>
+                <a href="html/inicio-sesion.html">
+                    <img id="usuarioLogo" class="imgCabecera" src="img/user.svg" alt="usuario">
+                </a>
+                <a href="html/compras.html">
+                    <img id="comprarLogo" class="imgCabecera" src="img/shopping.svg" alt="comprar">
+                </a>
+            </div>
+        </div>
+        <div id="divBuscador">
+            <input type="text" id="buscador" name="buscador" placeholder="Buscar...">
+            <img class="imgCabecera" src="img/search.svg" alt="imagen del buscador">
+        </div>
+    </header>
+
+    <section id="slider" class="contenedor-slider promocion">
+        <ul class="slider-wrapper">
+            <li class="current-slide imgPromocion">
+                <img class="imgPaginasPromo" src="img/asus-tuf-portatil.webp" alt="Imagen de promoción">
+                <div class="caption">
+                    <h2 class="slide-title">Portátil Asus Tuf</h2>
+                </div>
+            </li>
+            <li class="imgPromocion">
+                <img class="imgPaginasPromo" src="img/logitech-monitor.webp" alt="Imagen de un monitor">
+                <div class="caption">
+                    <h2 class="slide-title">Monitor Logitech</h2>
+                </div>
+            </li>
+        </ul>
+        <div class="slider-shadow"></div>
+        <ul id="control-buttons" class="control-buttons">
+            <li class="active"></li>
+            <li></li>
+        </ul>
+    </section>
+    <section id="principal">
+        <article class="contenido-principal">
+            <a href="html/portatiles.html">
+                <img class="imgPaginas" src="img/portatiles.webp" alt="Imagen de un portatil">
+            </a>
+            <p>Portátiles</p>
+        </article>
+        <article class="contenido-principal">
+            <a href="html/monitores.html">
+                <img class="imgPaginas" src="img/logitech-monitor.webp" alt="Imagen de un monitor">
+            </a>
+            <p>Monitores</p>
+        </article>
+        <article class="contenido-principal">
+            <a href="html/componentes.html">
+                <img class="imgPaginas" src="img/4090.webp" alt="Imagen de un componente GPU">
+            </a>
+            <p>Componentes</p>
+        </article>
+        <article class="contenido-principal">
+            <a href="html/sobremesas.html">
+                <img class="imgPaginas" src="img/pc-imperial.webp" alt="Imagen de un PC de sobremesa">
+            </a>
+            <p>PC de sobremesa</p>
+        </article>
+    </section>
+
+    <section id="ofertas">
+        <h1>Ofertas de la semana</h1>
+        <a href="html/portatiles-ofertas.html">Ver más</a>
+
+        <article>
+            <div id="secOfertas">
+                <a href="html/portatiles-ofertas.html">Portátiles</a>
+                <a href="html/monitores-ofertas.html">Monitores</a>
+                <a href="html/componentes-ofertas.html">Componentes</a>
+                <a href="html/sobremesas-ofertas.html">Pc sobremesa</a>
+            </div>
+
+            <div class="datos-ofertas">
+                <a href="html/portatil.html">
+                    <span class="envio">Envío gratis</span>
+                    <img src="img/portatil-asus.webp" alt="Imagen de un portatil en oferta">
+                    <p>Revolt 4060 Intel Core i7-13700H/32GB/1TB SSD/RTX 4060/17.3</p>
+                    <span class="precio-oferta">2.019,6€</span>
+                    <span class="precio-recomendado">2560,80€</span>
+                </a>
+                <a href="html/portatil.html">
+                    <span class="envio">Envío gratis</span>
+                    <img src="img/portatiles.webp" alt="Imagen de un portatil en oferta">
+                    <p>Revolt 4060 Intel Core i7-13700H/32GB/1TB SSD/RTX 4060/17.3</p>
+                    <span class="precio-oferta">1902,6€</span>
+                    <span class="precio-recomendado">2560,80€</span>
+                </a>
+            </div>
+        </article>
+    </section>
+    <footer>
+        
+        <div id="redes">
+            <h2>Siguenos</h2>
+            <a href="https://twitter.com">
+                <img src="img/twitter.svg" alt="Imagen del logo de twitter">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="img/instagram.svg" alt="Imagen del logo de instagram">
+            </a>
+            <a href="https://www.tiktok.com/">
+                <img src="img/tiktok.svg" alt="Imagen del logo de tiktok">
+            </a>
+        </div>
+
+        <div class="avisos-legales">
+            <a href="html/avisos-legales.html">
+                <img src="img/bx-male.svg" alt="Imagen de una persona">
+                <p>Quienes somos</p>
+                <img src="img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+            </a>
+
+
+            <a href="html/avisos-legales.html">
+                <img src="img/bxs-envelope.svg" alt="Imagen de una carta">
+                <p>Contactar</p>
+            </a>
+            <img src="img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+
+            <a href="html/avisos-legales.html">
+                <img src="img/bxs-award.svg" alt="Imagen de un aviso">
+                <p>Aviso legal</p>
+            </a>
+            <img src="img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+        </div>
+
+        <div id="metodoPago">
+            <img src="img/visa.webp" alt="Imagen del logo de Visa">
+            <img src="img/mastercard.webp" alt="imagen del logo de MasterCard">
+        </div>
+    </footer>
+    <div id="volverarriba"><a href="#top">VOLVER ARRIBA <span><i class="fa fa-sort-asc"
+                    aria-hidden="true"></i></span></a></div>
+
+</body>
+
+</html>
