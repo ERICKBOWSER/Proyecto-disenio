@@ -306,19 +306,9 @@ footer{
     flex: 100%;
 }
 
-footer > div#redes{
-    border: 1px solid green
-}
-
-
-footer > div#metodoPago{
-    border: 1px solid yellow;
-}
-
 footer > div#redes > h2{
     flex:0 100%;
     text-align: center;
-    border: 1px solid red;
 }
 
 footer > div#redes{
@@ -949,6 +939,112 @@ div#volverarriba > a{
 
     #envioCasa{
         width: 100%;
+    }
+
+    footer > div#redes{
+        border: 1px solid green
+    }
+    
+    
+    footer > div#metodoPago{
+        border: 1px solid yellow;
+    }
+    
+    footer > div#redes > h2{
+        border: 1px solid red;
+    }
+
+    footer > div.avisos-legales{    
+        border: 2px solid orange;
+        background-color: black;
+    
+    }
+
+    footer > div.avisos-legales > a{
+        flex: 100%;
+    }
+
+  }
+
+  @media(min-width: 1000px){
+    header{
+        margin-bottom: 0.8rem;
+    }
+
+    section#principal > article{
+        width: 20%;
+    }
+
+    section#secProductos > article > div.articulo-contenedor{
+        flex-flow: row wrap;
+    }
+
+    section#secProductos > article > div.articulo-contenedor > a {
+        flex: 0 40%;
+    }
+
+    section.promocion{
+        display: flex;
+        flex: 0 50%;
+        justify-content: center;
+
+        border: 1px solid red;
+    }
+
+      
+      .slider-wrapper {
+        z-index: 1;
+        position: relative;
+        width: 500px;
+        height: 360px;
+        background: #FFF;
+        border: 5px solid #b55e5e;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+      
+      .slider-shadow {
+        width: 500px;
+        height: 15px;
+        position: relative;
+        margin: auto;
+      }
+
+    section.promocion > ul.slider-wrapper > li{
+        display: block;
+        justify-content: center;
+        margin-left: -2.5rem; /* Hace que no haya un espacio a la izquierda y se pueda centrar */
+        
+    }
+    
+    section.promocion > ul.slider-wrapper > li > img.imgPaginasPromo{
+        width: 390px;
+        margin: 0 auto;
+    }    
+
+    section#principal{
+        flex: 0 45%;
+        flex-flow: row wrap;
+
+        border: 1px solid yellow;
+    }
+
+    section#principal > article{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0.2rem;
+        margin-top: 1rem;
+
+        flex: 40%;
+    }
+
+    .contenido-principal{
+        justify-content: center;
+    }
+
+    .contenido-principal > p{
+        width: 60%;
+        text-align: center;
     }
 
   }
