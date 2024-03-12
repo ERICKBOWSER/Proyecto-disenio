@@ -22,10 +22,10 @@
                 <ul id="menu">
                     <li id="ofertas">
                         <img src="../img/offer.svg" alt="Imagen de ofertas">
-                        <a href="ofertas.html">Ofertas</a>
+                        <a href="componentes-ofertas.html" id="ofertas">Ofertas</a>
                     </li>
                     <li>
-                        <a href="ordenadores.html">Ordenadores</a>
+                        <a href="ordenadores.html">Portátiles</a>
                     </li>
                     <li>
                         <a href="componentes.html">Componentes</a>
@@ -39,28 +39,33 @@
                 </ul>
             </nav>
             <a href="../index.html" id="logo"><strong>Innovate</strong><br>Pc Parts</a>
-            <div>
+            <div id="usuario-comprar">
                 <a href="inicio-sesion.html">
                     <img id="usuarioLogo" class="imgCabecera" src="../img/user.svg" alt="usuario">
                 </a>
-                <a href="compras.html">
+                <a href="cesta.html">
                     <img id="comprarLogo" class="imgCabecera" src="../img/shopping.svg" alt="comprar">
                 </a>
             </div>
+            <div id="divBuscador">
+                <input type="text" id="buscador" name="buscador" placeholder="Buscar...">
+                <img class="imgCabecera" src="../img/search.svg" alt="imagen del buscador">
+            </div>
         </div>
-        <div id="divBuscador">
-            <input type="text" id="buscador" name="buscador" placeholder="Buscar...">
-            <img class="imgCabecera" src="../img/search.svg" alt="imagen del buscador">
-        </div>
+       
     </header>
+    <div id="borde-azul"></div>
 
     <form action="index.html" method="post">
         <div id="formulario">
             <h1>Crear cuenta</h1>
             <input type="text" name="email" id="email" aria-label="Correo electrónico" 
                 placeholder="E-mail..." class="datosForm" />
+            <p class="error">Rellena este campo para continuar</p>
             <input type="password" name="contrasenia" id="contrasenia" aria-label="contraseña"
                 placeholder="Contraseña..." class="datosForm" />
+            <p class="error">Rellena este campo para continuar</p>
+
 
             <select name="codigos-internacionales" id="codigos-internacionales">
                 <option value="espania">+34</option>
@@ -70,8 +75,9 @@
             </select>
             
             <input type="tel" id="movil" name="movil" placeholder="Móvil..." pattern="[0-9]{9}" />
+            <p class="error">Rellena este campo para continuar</p>
 
-            <input type="submit" name="crear-cuenta" id="cuenta-creada" value="Crear cuenta" class="datosForm" />
+            <input type="submit" name="crear-cuenta" id="cuenta-creada" value="Crear cuenta" class="datosForm errorForm" />
             <div id="promociones">
                 <input type="checkbox" id="promocion" name="promocion" aria-label="Recibir promociones" />
                 <label for="promocion">Recibir promociones, novedades y contenido personalizados.</label>
@@ -98,22 +104,23 @@
             <a href="avisos-legales.html">
                 <img src="../img/bx-male.svg" alt="Imagen de una persona">
                 <p>Quienes somos</p>
+                <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+
             </a>
-            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
-        </div>
-        <div class="avisos-legales">
+
             <a href="avisos-legales.html">
                 <img src="../img/bxs-envelope.svg" alt="Imagen de una carta">
                 <p>Contactar</p>
+                <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+
             </a>
-            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
-        </div>
-        <div class="avisos-legales">
+   
             <a href="avisos-legales.html">
                 <img src="../img/bxs-award.svg" alt="Imagen de un aviso">
                 <p>Aviso legal</p>
+                <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+
             </a>
-            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
         </div>
         <div id="metodoPago">
             <img src="../img/visa.webp" alt="Imagen del logo de Visa">

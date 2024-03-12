@@ -22,42 +22,44 @@
                 <ul id="menu">
                     <li id="ofertas">
                         <img src="../img/offer.svg" alt="Imagen de ofertas">
-                        <a href="ofertas.html">Ofertas</a>
+                        <a href="portatiles-ofertas.html" id="ofertas">Ofertas</a>
+                    </li>
+                    <li id="portatiles-color">
+                        <a href="ordenadores.html" >Portátiles</a>
                     </li>
                     <li>
-                        <a href="ordenadores.html">Ordenadores</a>
+                        <a href="componentes.html" id="componentes">Componentes</a>
                     </li>
                     <li>
-                        <a href="componentes.html">Componentes</a>
+                        <a href="sobremesas.html" id="sobremesas">Pc sobremesa</a>
                     </li>
                     <li>
-                        <a href="sobremesas.html">Pc sobremesa</a>
-                    </li>
-                    <li>
-                        <a href="monitores.html">Monitores</a>
+                        <a href="monitores.html" id="monitores">Monitores</a>
                     </li>
                 </ul>
             </nav>
             <a href="../index.html" id="logo"><strong>Innovate</strong><br>Pc Parts</a>
-            <div>
+            <div id="usuario-comprar">
                 <a href="inicio-sesion.html">
                     <img id="usuarioLogo" class="imgCabecera" src="../img/user.svg" alt="usuario">
                 </a>
-                <a href="compras.html">
+                <a href="cesta.html">
                     <img id="comprarLogo" class="imgCabecera" src="../img/shopping.svg" alt="comprar">
                 </a>
             </div>
+            <div id="divBuscador">
+                <input type="text" id="buscador" name="buscador" placeholder="Buscar...">
+                <img class="imgCabecera" src="../img/search.svg" alt="imagen del buscador">
+            </div>
         </div>
-        <div id="divBuscador">
-            <input type="text" id="buscador" name="buscador" placeholder="Buscar...">
-            <img class="imgCabecera" src="../img/search.svg" alt="imagen del buscador">
-        </div>
+       
     </header>
+    <div id="borde-azul"></div>
 
     <section id="secProducto">
         <article>
             <div id="atras">
-                <a href="portatiles.html">
+                <a href="ordenadores.html">
                     
                     <img src="../img/bx-chevron-left.svg" alt="imagen de indicador izquierdo" />
                     <span>Atrás</span>
@@ -73,10 +75,11 @@
                     <img src="../img/estrella.svg" alt="Imagen de estrella">
                     <img src="../img/estrella.svg" alt="Imagen de estrella">
                 </div>
+                <hr />
             </div>
-            <hr />
+            <div id="especificaciones">
             <h2>Especificaciones</h2>
-            <ul id="especificaciones">
+            <ul>
                     <li>Procesador Intel Core i9-13900H (14C/undefined 5.4GHz, 24MB)</li>
                     <li>Memoria RAM 32GB SO-DIMM DDR4 3200MHz</li>
                     <li>Almacenamiento 1TB SSD M.2 NVMe PCIe</li>
@@ -118,6 +121,7 @@
                     <li>Peso 2.2 Kg</li>
                     <li>Color Gris</li>                  
             </ul>
+            </div>
             <div id="datosEnvio">
                 <h3>Disponibilidad del producto en: <strong>En stock</strong></h3>
                 <div id="envioCasa">
@@ -130,13 +134,53 @@
                     <span>Ver disponibilidad en tienda</span>
                 </div>
             </div>
+            <div id="comprar">
+                <span>1499,99€</span>
+                <button type="submit" id="aniadirProducto">Añadir a la cesta</button>
+            </div>
         </article>
-        <div id="comprar">
-            <span>1499,99€</span>
-            <button type="submit" id="aniadirProducto">Añadir a la cesta</button>
-        </div>
+        <article id="video">
+            <video id="video" controls preload="none" poster="../img/trailer.png">
+                <source id="mp4" src="../videos/resultado_final_final.mp4" type="video/mp4">
+            </video>
+            <div id="buttons">
+                <button onclick="getVideo().load()">
+                    <img class="imagenes" src="../img/bx-loader-circle.svg">
+                </button>
+                <button onclick="getVideo().play()">
+                    <img class="imagenes" src="../img/bx-play (1).svg">
+                </button>
+                <button onclick="getVideo().pause()">
+                    <img class="imagenes" src="../img/bx-pause.svg">
+                </button>
+                <button onclick="getVideo().currentTime-=10">
+                    <img class="imagenes png1" src="../img/tiempo-atras-diez.png">
+                </button>
+                <button onclick="getVideo().currentTime+=10">
+                    <img class="imagenes png1" src="../img/tiempo-adelante-diez.png">
+                </button>
+                <button onclick="getVideo().playbackRate-=0.1">
+                    <img class="imagenes png1" src="../img/retroceder.png">
+                </button>
+                <button onclick="getVideo().playbackRate+=0.1">
+                    <img class="imagenes png1" src="../img/adelantar.png">
+                </button>
+                <button onclick="getVideo().volume+=0.1">
+                    <img class="imagenes" src="../img/bx-plus.svg">
+                </button>
+                <button onclick="getVideo().volume-=0.1">
+                    <img class="imagenes" src="../img/bx-minus.svg">
+                </button>
+                <button onclick="getVideo().muted=true">
+                    <img class="imagenes" src="../img/bxs-volume-mute (1).svg">
+                </button>
+                <button onclick="getVideo().muted=false">
+                    <img class="imagenes" src="../img/bxs-volume-full (1).svg">
+                </button>
+            </div>
+        </article>
+       
     </section>
-
     <footer>
         
         <div id="redes">
@@ -156,22 +200,23 @@
             <a href="avisos-legales.html">
                 <img src="../img/bx-male.svg" alt="Imagen de una persona">
                 <p>Quienes somos</p>
+                <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+
             </a>
-            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
-        </div>
-        <div class="avisos-legales">
+
             <a href="avisos-legales.html">
                 <img src="../img/bxs-envelope.svg" alt="Imagen de una carta">
                 <p>Contactar</p>
+                <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+
             </a>
-            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
-        </div>
-        <div class="avisos-legales">
+   
             <a href="avisos-legales.html">
                 <img src="../img/bxs-award.svg" alt="Imagen de un aviso">
                 <p>Aviso legal</p>
+                <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+
             </a>
-            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
         </div>
         <div id="metodoPago">
             <img src="../img/visa.webp" alt="Imagen del logo de Visa">

@@ -22,12 +22,12 @@
                 <ul id="menu">
                     <li id="ofertas">
                         <img src="../img/offer.svg" alt="Imagen de ofertas">
-                        <a href="ofertas.html">Ofertas</a>
+                        <a href="componentes-ofertas.html" id="ofertas">Ofertas</a>
                     </li>
                     <li>
-                        <a href="ordenadores.html">Ordenadores</a>
+                        <a href="ordenadores.html">Portátiles</a>
                     </li>
-                    <li>
+                    <li id="componentes-color">
                         <a href="componentes.html">Componentes</a>
                     </li>
                     <li>
@@ -39,20 +39,22 @@
                 </ul>
             </nav>
             <a href="../index.html" id="logo"><strong>Innovate</strong><br>Pc Parts</a>
-            <div>
+            <div id="usuario-comprar">
                 <a href="inicio-sesion.html">
                     <img id="usuarioLogo" class="imgCabecera" src="../img/user.svg" alt="usuario">
                 </a>
-                <a href="compras.html">
+                <a href="cesta.html">
                     <img id="comprarLogo" class="imgCabecera" src="../img/shopping.svg" alt="comprar">
                 </a>
             </div>
+            <div id="divBuscador">
+                <input type="text" id="buscador" name="buscador" placeholder="Buscar...">
+                <img class="imgCabecera" src="../img/search.svg" alt="imagen del buscador">
+            </div>
         </div>
-        <div id="divBuscador">
-            <input type="text" id="buscador" name="buscador" placeholder="Buscar...">
-            <img class="imgCabecera" src="../img/search.svg" alt="imagen del buscador">
-        </div>
+       
     </header>
+    <div id="borde-azul"></div>
 
     <section id="secProducto">
         <article>
@@ -73,10 +75,13 @@
                     <img src="../img/estrella.svg" alt="Imagen de estrella">
                     <img src="../img/estrella.svg" alt="Imagen de estrella">
                 </div>
+                <hr />
+
             </div>
-            <hr />
+            <div id="especificaciones">
+
             <h2>Especificaciones</h2>
-            <ul id="especificaciones">
+            <ul>
                 <li>Unidad de procesamiento de gráficos NVIDIA® GeForce RTX™ 4060</li>
                 <li>Interfaz PCI Express® Gen 4x8</li>
                 <li>Relojes centrales</li>
@@ -99,6 +104,7 @@
                 <li>Tecnología G-SYNC™ Sí</li>
                 <li>Resolución máxima digital 7680 x 4320</li>
             </ul>
+            </div>
             <div id="datosEnvio">
                 <h3>Disponibilidad del producto en: <strong>En stock</strong></h3>
                 <div id="envioCasa">
@@ -111,11 +117,53 @@
                     <span>Ver disponibilidad en tienda</span>
                 </div>
             </div>
+            <div id="comprar">
+                <span>324,99€</span>
+                
+                <button type="submit" id="aniadirProducto">Añadir a la cesta</button>
+            </div>
         </article>
-        <div id="comprar">
-            <span>324,99€</span>
-            <button type="submit" id="aniadirProducto">Añadir a la cesta</button>
-        </div>
+        <article id="video">
+            <video id="video" controls preload="none" poster="../img/trailer.png">
+                <source id="mp4" src="../videos/resultado_final_final.mp4" type="video/mp4">
+            </video>
+            <div id="buttons">
+                <button onclick="getVideo().load()">
+                    <img class="imagenes" src="../img/bx-loader-circle.svg">
+                </button>
+                <button onclick="getVideo().play()">
+                    <img class="imagenes" src="../img/bx-play (1).svg">
+                </button>
+                <button onclick="getVideo().pause()">
+                    <img class="imagenes" src="../img/bx-pause.svg">
+                </button>
+                <button onclick="getVideo().currentTime-=10">
+                    <img class="imagenes png1" src="../img/tiempo-atras-diez.png">
+                </button>
+                <button onclick="getVideo().currentTime+=10">
+                    <img class="imagenes png1" src="../img/tiempo-adelante-diez.png">
+                </button>
+                <button onclick="getVideo().playbackRate-=0.1">
+                    <img class="imagenes png1" src="../img/retroceder.png">
+                </button>
+                <button onclick="getVideo().playbackRate+=0.1">
+                    <img class="imagenes png1" src="../img/adelantar.png">
+                </button>
+                <button onclick="getVideo().volume+=0.1">
+                    <img class="imagenes" src="../img/bx-plus.svg">
+                </button>
+                <button onclick="getVideo().volume-=0.1">
+                    <img class="imagenes" src="../img/bx-minus.svg">
+                </button>
+                <button onclick="getVideo().muted=true">
+                    <img class="imagenes" src="../img/bxs-volume-mute (1).svg">
+                </button>
+                <button onclick="getVideo().muted=false">
+                    <img class="imagenes" src="../img/bxs-volume-full (1).svg">
+                </button>
+            </div>
+        </article>
+        
     </section>
 
     <footer>
@@ -137,22 +185,23 @@
             <a href="avisos-legales.html">
                 <img src="../img/bx-male.svg" alt="Imagen de una persona">
                 <p>Quienes somos</p>
+                <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+
             </a>
-            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
-        </div>
-        <div class="avisos-legales">
+
             <a href="avisos-legales.html">
                 <img src="../img/bxs-envelope.svg" alt="Imagen de una carta">
                 <p>Contactar</p>
+                <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+
             </a>
-            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
-        </div>
-        <div class="avisos-legales">
+   
             <a href="avisos-legales.html">
                 <img src="../img/bxs-award.svg" alt="Imagen de un aviso">
                 <p>Aviso legal</p>
+                <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+
             </a>
-            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
         </div>
         <div id="metodoPago">
             <img src="../img/visa.webp" alt="Imagen del logo de Visa">

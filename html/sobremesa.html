@@ -9,6 +9,7 @@
     <script src="../jq/jquery-3.7.1.js" type="text/javascript"></script>
     <script src="../jq/jquery.animate-colors-min.js" type="text/javascript"></script>
     <script src="../jq/funciones.js" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -22,37 +23,39 @@
                 <ul id="menu">
                     <li id="ofertas">
                         <img src="../img/offer.svg" alt="Imagen de ofertas">
-                        <a href="ofertas.html">Ofertas</a>
+                        <a href="sobremesas-ofertas.html" id="ofertas">Ofertas</a>
                     </li>
                     <li>
-                        <a href="ordenadores.html">Ordenadores</a>
+                        <a href="ordenadores.html" id="ordenadores">Portátiles</a>
                     </li>
                     <li>
-                        <a href="componentes.html">Componentes</a>
+                        <a href="componentes.html" id="componentes">Componentes</a>
+                    </li>
+                    <li id="pc-color">
+                        <a href="sobremesas.html" id="sobremesas">Pc sobremesa</a>
                     </li>
                     <li>
-                        <a href="sobremesas.html">Pc sobremesa</a>
-                    </li>
-                    <li>
-                        <a href="monitores.html">Monitores</a>
+                        <a href="monitores.html" id="monitores">Monitores</a>
                     </li>
                 </ul>
             </nav>
             <a href="../index.html" id="logo"><strong>Innovate</strong><br>Pc Parts</a>
-            <div>
+            <div id="usuario-comprar">
                 <a href="inicio-sesion.html">
                     <img id="usuarioLogo" class="imgCabecera" src="../img/user.svg" alt="usuario">
                 </a>
-                <a href="compras.html">
+                <a href="cesta.html">
                     <img id="comprarLogo" class="imgCabecera" src="../img/shopping.svg" alt="comprar">
                 </a>
             </div>
+            <div id="divBuscador">
+                <input type="text" id="buscador" name="buscador" placeholder="Buscar...">
+                <img class="imgCabecera" src="../img/search.svg" alt="imagen del buscador">
+            </div>
         </div>
-        <div id="divBuscador">
-            <input type="text" id="buscador" name="buscador" placeholder="Buscar...">
-            <img class="imgCabecera" src="../img/search.svg" alt="imagen del buscador">
-        </div>
+
     </header>
+    <div id="borde-azul"></div>
 
     <section id="secProducto">
         <article>
@@ -73,72 +76,82 @@
                     <img src="../img/estrella.svg" alt="Imagen de estrella">
                     <img src="../img/estrella.svg" alt="Imagen de estrella">
                 </div>
-            </div>
-            <hr />
-
-            <h2>Selección de modelo</h2>
-            <div class="contenedorSeleccion">
-                <p>Almacenamiento SSD</p>
-                <button class="botones">1 TB SSD</button>
-                <button class="botones">500 GB SSD</button>
+                <hr />
             </div>
 
-            <div class="contenedorSeleccion">
-                <p>Modelo de sistema operativo</p>
-                <button class="botones">Sin Sistema Operativo</button>
-                <button class="botones">Windows 11 Pro</button>
+            <div id="seleccionarComponentes">
+                <h2>Selección de modelo</h2>
+                <div class="contenedorSeleccion">
+                    <p>Almacenamiento SSD</p>
+                    <button class="botones">1 TB SSD</button>
+                    <button class="botones">500 GB SSD</button>
+                </div>
+
+                <div class="contenedorSeleccion">
+                    <p>Modelo de sistema operativo</p>
+                    <button class="botones">Sin Sistema Operativo</button>
+                    <button class="botones">Windows 11 Pro</button>
+                </div>
+
+                <div class="contenedorSeleccion">
+                    <p>Almacenamiento RAM</p>
+                    <button class="botones">32 GB</button>
+                    <button class="botones">16 GB</button>
+                </div>
             </div>
 
-            <div class="contenedorSeleccion">
-                <p>Almacenamiento RAM</p>
-                <button class="botones">32 GB</button>
-                <button class="botones">16 GB</button>
-            </div>
-
-
-            <h2>Especificaciones</h2>
-            <ul id="especificaciones">
+            <div id="especificaciones">
+                <h2>Especificaciones</h2>
+                <ul>
                     <li>Torre Cougar Duoface Pro</li>
-                    <li>Fuente de alimentación FSP Hydro Pro Series 1000W 80+ Gold (o similar, según disponibilidad)</li>
-                    <li>Procesador Intel® Core™ i9-14900KF (24 núcleos, frecuencia desde 2.4GHz hasta 6GHz, 36 MB Intel® Smart Cache)</li>
+                    <li>Fuente de alimentación FSP Hydro Pro Series 1000W 80+ Gold (o similar, según disponibilidad)
+                    </li>
+                    <li>Procesador Intel® Core™ i9-14900KF (24 núcleos, frecuencia desde 2.4GHz hasta 6GHz, 36 MB Intel®
+                        Smart Cache)</li>
                     <li>Placa base ASUS Prime Z790-P DDR5 (según disponibilidad siempre usando primeras marcas)</li>
-                    <li>Ventilación Refrigeración líquida Abysm Artic 240mm o similar (según disponibilidad siempre usando primeras marcas)</li>
+                    <li>Ventilación Refrigeración líquida Abysm Artic 240mm o similar (según disponibilidad siempre
+                        usando
+                        primeras marcas)</li>
                     <li>Disco duro 2TB SSD M.2 NVMe (siempre de primeras marcas HP, WD, Samsung, Corsair, etc.)</li>
-                    <li>Memoria 64GB DDR5 5600MHz (siempre de primeras marcas Corsair, Predator, Kingston, XPG, etc., según disponibilidad)</li>
-                    <li>Gráfica ASUS TUF GAMING Nvidia GeForce RTX 4090 24GB (o similar según disponibilidad, siempre de primeras marcas)</li>
+                    <li>Memoria 64GB DDR5 5600MHz (siempre de primeras marcas Corsair, Predator, Kingston, XPG, etc.,
+                        según
+                        disponibilidad)</li>
+                    <li>Gráfica ASUS TUF GAMING Nvidia GeForce RTX 4090 24GB (o similar según disponibilidad, siempre de
+                        primeras marcas)</li>
                     <li>Wi-Fi 6 Sí</li>
                     <li>Bluetooth Sí</li>
                     <li>Conexiones traseras
-                      <ul>
-                        <li>Puertos USB 2.0: 2</li>
-                        <li>Puertos USB 3.2 Gen1: 2</li>
-                        <li>Puertos USB 3.2 Gen1: 1</li>
-                        <li>Puertos USB-C: 1</li>
-                        <li>Entrada de audio: Sí</li>
-                        <li>Salida de audio: Sí</li>
-                        <li>Red: Ethernet Gbit</li>
-                        <li>HDMI</li>
-                        <li>DisplayPort</li>
-                        <li>PS/2</li>
-                      </ul>
+                        <ul>
+                            <li>Puertos USB 2.0: 2</li>
+                            <li>Puertos USB 3.2 Gen1: 2</li>
+                            <li>Puertos USB 3.2 Gen1: 1</li>
+                            <li>Puertos USB-C: 1</li>
+                            <li>Entrada de audio: Sí</li>
+                            <li>Salida de audio: Sí</li>
+                            <li>Red: Ethernet Gbit</li>
+                            <li>HDMI</li>
+                            <li>DisplayPort</li>
+                            <li>PS/2</li>
+                        </ul>
                     </li>
                     <li>Conexiones tarjeta gráfica
-                      <ul>
-                        <li>Número de puertos DisplayPort: 3</li>
-                        <li>Número de puertos HDMI: 1</li>
-                      </ul>
+                        <ul>
+                            <li>Número de puertos DisplayPort: 3</li>
+                            <li>Número de puertos HDMI: 1</li>
+                        </ul>
                     </li>
                     <li>Conexiones delanteras
-                      <ul>
-                        <li>Puertos USB 3.2 Gen1: 2</li>
-                        <li>Puertos USB-C: 1</li>
-                        <li>Entrada de audio: Sí</li>
-                        <li>Salida de audio: Sí</li>
-                      </ul>
+                        <ul>
+                            <li>Puertos USB 3.2 Gen1: 2</li>
+                            <li>Puertos USB-C: 1</li>
+                            <li>Entrada de audio: Sí</li>
+                            <li>Salida de audio: Sí</li>
+                        </ul>
                     </li>
                     <li>Sistema Operativo Windows 11 Home</li>
-                    <li>Dimensiones (L x An x Al) 495mm x 240mm x 465mm</li>                  
-            </ul>
+                    <li>Dimensiones (L x An x Al) 495mm x 240mm x 465mm</li>
+                </ul>
+            </div>
             <div id="datosEnvio">
                 <h3>Disponibilidad del producto en: <strong>En stock</strong></h3>
                 <div id="envioCasa">
@@ -151,15 +164,58 @@
                     <span>Ver disponibilidad en tienda</span>
                 </div>
             </div>
+            <div id="comprar">
+                <span>3.899,99€</span>
+                <button type="submit" id="aniadirProducto">Añadir a la cesta</button>
+            </div>
         </article>
-        <div id="comprar">
-            <span>3.899,99€</span>
-            <button type="submit" id="aniadirProducto">Añadir a la cesta</button>
-        </div>
+
+        <article id="video">
+            <video id="video" controls preload="none" poster="../img/trailer.png">
+                <source id="mp4" src="../videos/resultado_final_final.mp4" type="video/mp4">
+            </video>
+            <div id="buttons">
+                <button onclick="getVideo().load()">
+                    <img class="imagenes" src="../img/bx-loader-circle.svg">
+                </button>
+                <button onclick="getVideo().play()">
+                    <img class="imagenes" src="../img/bx-play (1).svg">
+                </button>
+                <button onclick="getVideo().pause()">
+                    <img class="imagenes" src="../img/bx-pause.svg">
+                </button>
+                <button onclick="getVideo().currentTime-=10">
+                    <img class="imagenes png1" src="../img/tiempo-atras-diez.png">
+                </button>
+                <button onclick="getVideo().currentTime+=10">
+                    <img class="imagenes png1" src="../img/tiempo-adelante-diez.png">
+                </button>
+                <button onclick="getVideo().playbackRate-=0.1">
+                    <img class="imagenes png1" src="../img/retroceder.png">
+                </button>
+                <button onclick="getVideo().playbackRate+=0.1">
+                    <img class="imagenes png1" src="../img/adelantar.png">
+                </button>
+                <button onclick="getVideo().volume+=0.1">
+                    <img class="imagenes" src="../img/bx-plus.svg">
+                </button>
+                <button onclick="getVideo().volume-=0.1">
+                    <img class="imagenes" src="../img/bx-minus.svg">
+                </button>
+                <button onclick="getVideo().muted=true">
+                    <img class="imagenes" src="../img/bxs-volume-mute (1).svg">
+                </button>
+                <button onclick="getVideo().muted=false">
+                    <img class="imagenes" src="../img/bxs-volume-full (1).svg">
+                </button>
+            </div>
+        </article>
+        
+
     </section>
 
     <footer>
-        
+
         <div id="redes">
             <h2>Siguenos</h2>
             <a href="https://twitter.com">
@@ -177,22 +233,23 @@
             <a href="avisos-legales.html">
                 <img src="../img/bx-male.svg" alt="Imagen de una persona">
                 <p>Quienes somos</p>
+                <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+
             </a>
-            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
-        </div>
-        <div class="avisos-legales">
+
             <a href="avisos-legales.html">
                 <img src="../img/bxs-envelope.svg" alt="Imagen de una carta">
                 <p>Contactar</p>
+                <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+
             </a>
-            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
-        </div>
-        <div class="avisos-legales">
+
             <a href="avisos-legales.html">
                 <img src="../img/bxs-award.svg" alt="Imagen de un aviso">
                 <p>Aviso legal</p>
+                <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
+
             </a>
-            <img src="../img/bxs-message-alt-x.svg" alt="Imagen de un icono de ver más">
         </div>
         <div id="metodoPago">
             <img src="../img/visa.webp" alt="Imagen del logo de Visa">

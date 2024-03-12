@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+
+body > article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body > article > video{
+    width: 50%;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(44, 138, 44);
+    border: 1px solid green;
+}
+
+
+.png1{
+    width: 24px;
+}
